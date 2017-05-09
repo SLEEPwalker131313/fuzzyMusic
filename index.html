@@ -7,6 +7,9 @@
  </head>
  <body>
   <style>
+  li{
+    list-style: none;
+  }
   </style>
   <br>
   <div class="container">
@@ -25,37 +28,11 @@
       if(songValue == "")
         alert("The input field can't be empty!")
       else if(songValue >= 0.0 && songValue <= 100.0)
-        applyChange()
+        applyChange(songValue)
       else
         alert("Enter a number in the range 0.0-100.0!")
     })
   </script>
-  <!-- <script>
-  //Обработка кликов по кнопкам
-   $('#runtime').click(function(){
-    $('#runtimeText').html('\
-     <?php echo 'ПХП!!!<br>Хотя и его тут мало. Для красивых\
-      кнопочек прикручен <mark>bootstrap</mark>. Для удобной обработки событий \
-      (хотя и для бустрапа он нужен) <mark>JQuery</mark>' ?>\
-    ');
-   });
-   $('#hardLevel').click(function(){
-    $('#hardLevelText').html('\
-     <?php echo '<H1>Увы</H1>' ?>\
-    ');
-   });
-   $('#github').click(function(){
-    $('#githubText').html('\
-     <?php echo 'К сожеланию, кроме WEBbrowser-а не было ничего и пришлось \
-     кодить и сразу комитить даже малейшие изменения сразу в гит' ?>\
-    ');
-   });
-   $('#DB').click(function(){
-    $('#DBText').html('\
-     <?php echo '<img src="img/img.jpg" height="250" onclick="changeSizeImage(this)" style="cursor: pointer">' ?>\
-    ');
-   });
-  </script> -->
   <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
