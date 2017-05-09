@@ -3,6 +3,7 @@
   <title>Сайтик</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/action.js"></script>
  </head>
  <body>
   <style>
@@ -24,7 +25,7 @@
       if(songValue == "")
         alert("The input field can't be empty!")
       else if(songValue >= 0.0 && songValue <= 100.0)
-        console.log(11);
+        applyChange()
       else
         alert("Enter a number in the range 0.0-100.0!")
     })
