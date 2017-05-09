@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  Test
-</body>
+<html>
+ <head>
+  <title>Сайтик</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+ </head>
+ <body>
+  <style>
+  </style>
+  <br>
+  <div class="container">
+      <form>
+        <input type="text" class="input-medium search-query" id="searchField" placeholder="0.0-100.0">
+        <div class="btn btn-default" id="btnSearch">Найти</div>
+      </form>
+      <div>
+        <ul id="songList">
+        </ul>
+      </div>
+  </div>
+  <script>
+    $('#btnSearch').click(function(){
+      songValue = $('#searchField').val();
+      if(songValue == "")
+        alert("Поле ввода не должно быть пустым!")
+      else if(songValue >= 0.0 && songValue <= 100.0)
+        console.log(11);
+      else
+        alert("Введите число из диапазона 0.0-100.0!")
+    })
+  </script>
+  <!-- <script>
+  //Обработка кликов по кнопкам
+   $('#runtime').click(function(){
+    $('#runtimeText').html('\
+     <?php echo 'ПХП!!!<br>Хотя и его тут мало. Для красивых\
+      кнопочек прикручен <mark>bootstrap</mark>. Для удобной обработки событий \
+      (хотя и для бустрапа он нужен) <mark>JQuery</mark>' ?>\
+    ');
+   });
+   $('#hardLevel').click(function(){
+    $('#hardLevelText').html('\
+     <?php echo '<H1>Увы</H1>' ?>\
+    ');
+   });
+   $('#github').click(function(){
+    $('#githubText').html('\
+     <?php echo 'К сожеланию, кроме WEBbrowser-а не было ничего и пришлось \
+     кодить и сразу комитить даже малейшие изменения сразу в гит' ?>\
+    ');
+   });
+   $('#DB').click(function(){
+    $('#DBText').html('\
+     <?php echo '<img src="img/img.jpg" height="250" onclick="changeSizeImage(this)" style="cursor: pointer">' ?>\
+    ');
+   });
+  </script> -->
+  <script src="js/bootstrap.min.js"></script>
+ </body>
 </html>
