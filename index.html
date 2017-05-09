@@ -11,7 +11,7 @@
   <div class="container">
       <form>
         <input type="text" class="input-medium search-query" id="searchField" placeholder="0.0-100.0">
-        <div class="btn btn-default" id="btnSearch">Найти</div>
+        <div class="btn btn-default" id="btnSearch">Find</div>
       </form>
       <div>
         <ul id="songList">
@@ -22,11 +22,11 @@
     $('#btnSearch').click(function(){
       songValue = $('#searchField').val();
       if(songValue == "")
-        alert("Поле ввода не должно быть пустым!")
+        alert("The input field can't be empty!")
       else if(songValue >= 0.0 && songValue <= 100.0)
         console.log(11);
       else
-        alert("Введите число из диапазона 0.0-100.0!")
+        alert("Enter a number in the range 0.0-100.0!")
     })
   </script>
   <!-- <script>
